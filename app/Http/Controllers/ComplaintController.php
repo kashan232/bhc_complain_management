@@ -391,4 +391,17 @@ class ComplaintController extends Controller
         ], 201);
     }
 
+    public function contacts()
+    {
+        if (Auth::id()) {
+            // Retrieve all complaints sorted by ID in descending order
+            $Contacts = Contact::all();
+            // dd($Contacts);
+            return view('admin.contacts', ['Contacts' => $Contacts]);
+        } else {
+            // User is not authenticated, return 401 unauthorized
+            abort(401);
+        }
+    }
+
 }

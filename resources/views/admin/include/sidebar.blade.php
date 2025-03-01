@@ -37,6 +37,14 @@
                     </li>
 
                     <li>
+                        <a class="ai-icon" href="{{ route('contacts') }}" aria-expanded="false">
+                            <i class="la la-envelope"></i>
+                            <span class="nav-text">Contacts</span>
+                        </a>
+                    </li>
+
+
+                    <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
                             <i class="la la-signal"></i>
                             <span class="nav-text">Reports</span>

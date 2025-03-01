@@ -43,6 +43,8 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/all-District', [ComplaintController::class, 'all_District'])->name('all-District');
     Route::get('/all-Talukas', [ComplaintController::class, 'all_Talukas'])->name('all-Talukas');
 
+    Route::get('/contacts', [ComplaintController::class, 'contacts'])->name('contacts');
+
     Route::post('/action-on-complaint', [ComplainRemarkController::class, 'action_on_complaint'])->name('action-on-complaint');
     
     Route::get('/Reporting-by-date', [ComplaintController::class, 'Reporting_by_date'])->name('Reporting-by-date');
